@@ -3,7 +3,7 @@ import Statistics from './Statistics';
 function StatisticList({ items }) {
     return (
         <section className="statistics">
-            <h2 class="title">Upload stats</h2>
+            <h2 className="title">Upload stats</h2>
             <ul className="stat-list">
                 {items.map(item => (
                     <li className="item" key={item.id}>

@@ -1,7 +1,8 @@
 import Profile from './components/Profile/Profile';
 import user from './jsons/user.json';
-import Statistics from './components/Statistics/Statistics';
+// import Statistics from './components/Statistics/Statistics';
 import statisticalData from './jsons/statistical-data.json';
+import StatisticList from './components/Statistics/StatisticList';
 export default function App() {
     return (
         <div>
@@ -12,17 +13,7 @@ export default function App() {
                 avatar={user.avatar}
                 stats={user.stats}
             />
-            <Statistics
-                title="Upload stats"
-                label={statisticalData[0].label}
-                percentage={statisticalData[0].percentage}
-            />
-            <Statistics
-                title="Upload stats"
-                label={statisticalData[1].label}
-                percentage={statisticalData[1].percentage}
-            />
-            ;
+            <StatisticList title="Upload stats" items={statisticalData} />;
         </div>
     );
 }

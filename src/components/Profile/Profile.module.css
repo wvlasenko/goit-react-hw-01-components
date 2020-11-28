@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
 .profile {
     width: 250px;
     margin-right: auto;
@@ -33,6 +33,7 @@
 }
 
 .name {
+    font-family: Roboto;
     margin: 0px;
     padding: 0px;
     font-size: 18px;
@@ -42,6 +43,7 @@
 
 .tag,
 .location {
+    font-family: Montserrat;
     margin: 0px;
     padding: 0px;
     font-size: 14px;
@@ -49,6 +51,7 @@
 }
 
 .stats {
+    font-family: Montserrat;
     list-style-type: none;
     display: flex;
     padding-inline-start: 0px;
